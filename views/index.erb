@@ -1,5 +1,10 @@
 
-<h1>My name is <%= @name %></h1>
+<% if @name %>
+<h1>My name is <%= @name %> and my eyes are <%= @color %></h1>
+<% end %>
+<% if @adorable == "true" %>
+<h2>Aren't I adorable? :)</h2>
+<% end %>
 <div>
 <img src='http://bit.ly/1eze8aE' style='border:5px dashed red;'>
 </div>
